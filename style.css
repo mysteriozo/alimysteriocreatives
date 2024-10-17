@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000; /* Black header */
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    color: #ff0000; /* Red text */
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White text for navigation */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff; /* White text */
+    text-align: center;
+}
+
+.hero .logo {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the logo and add some space below it */
+    width: 150px; /* Adjust the width of the logo */
+    opacity: 0.9; /* Slight transparency for a subtle look */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #ff0000; /* Red button */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.services, .portfolio, .about, .contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.service-cards, .portfolio-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card, .portfolio-item {
+    width: 30%;
+    background-color: #1a1a1a; /* Dark background for cards */
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Light shadow */
+}
+
+.service-card h4, .portfolio-item h4 {
+    color: #ff0000; /* Red headings in cards */
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.order-section {
+    margin-top: 40px;
+}
+
+.order-section h3 {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.order-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-section form input, .order-section form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.order-section form button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-section form button:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: #ff0000; /* Red footer text */
+}

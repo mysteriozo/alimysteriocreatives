@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ali Mysterio Creatives Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="typing-text"></h1> <!-- This will be animated -->
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="logo.png" alt="Ali Mysterio Creatives Design Logo" class="logo"> <!-- Logo above hero text -->
+            <h2>Take Your Creativity to the Next Level</h2>
+            <p>Gaming logos, automotive illustrations, and creative solutions for your business.</p>
+            <a href="#portfolio" class="cta-button">View Portfolio</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h3>Our Services</h3>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h4>Gaming Logos</h4>
+                    <p>We design professional logos for eSports teams and gamers.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Automotive Illustrations</h4>
+                    <p>Creating captivating artwork for your automotive brand.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Invitation Design</h4>
+                    <p>Premium invitation designs with a personal touch.</p>
+                </div>
+            </div>
+
+            <!-- Add the order form here -->
+            <div class="order-section">
+                <h3>Place Your Order</h3>
+                <form action="mailto:aliribery0102@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="order-details" placeholder="Describe your order (e.g., gaming logo, illustration)" required></textarea>
+                    <button type="submit">Place Order</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h3>Portfolio</h3>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="image1.jpg" alt="Project 1">
+                    <h4>Project 1</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image2.jpg" alt="Project 2">
+                    <h4>Project 2</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image3.jpg" alt="Project 3">
+                    <h4>Project 3</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="image.jpg" alt="Project 3">
+                    <h4>Project 4</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h3>About Us</h3>
+            <p>Ali Mysterio Creatives Design is a graphic design service provider dedicated to delivering creative solutions to our clients. With expertise in gaming logos, automotive illustrations, and invitation design, we are committed to producing stunning work that aligns with the latest industry trends.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ali Mysterio Creatives Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
