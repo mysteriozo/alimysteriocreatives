@@ -12,14 +12,27 @@
     <header>
         <div class="container">
             <h1 id="typing-text"></h1> <!-- This will be animated -->
-            <nav>
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+           <!-- Add this in the navigation area -->
+<nav>
+    <ul id="mobileMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('mobileMenu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+</script>
+
         </div>
     </header>
 
@@ -95,16 +108,101 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h3>Contact Us</h3>
-            <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .faq-container {
+            margin: 20px;
+        }
+        .faq-question {
+            background-color: #333;
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #555;
+            margin-bottom: 5px;
+        }
+        .faq-answer {
+            display: none;
+            background-color: #222;
+            padding: 10px;
+            border-left: 3px solid #ff0000;
+        }
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-container">
+    <div class="faq-item">
+        <div class="faq-question">What services do you offer?</div>
+        <div class="faq-answer">
+            <p>We offer graphic design services, including gaming logos, automotive illustrations, emoticons, gaming banners, and streaming overlays.</p>
         </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How can I place an order?</div>
+        <div class="faq-answer">
+            <p>You can place an order through our website by clicking the order button. Fill out the contact form with your project details, and we will get in touch with you via email.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How long does the design process take?</div>
+        <div class="faq-answer">
+            <p>The design time depends on the complexity of the project and revisions. Generally, it takes around 2-5 business days to complete a design.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Do you accept design revisions?</div>
+        <div class="faq-answer">
+            <p>Yes, we offer 2 free revisions. Additional revisions will incur extra charges.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What payment methods do you accept?</div>
+        <div class="faq-answer">
+            <p>We accept payments via bank transfer, e-wallet, and other agreed-upon methods.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+    <section id="contact" class="contact">
+       <!-- Add the order form here -->
+       <div class="order-section">
+        <h3>Contact Us</h3>
+        <form action="mailto:aliribery0102@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="order-details" placeholder="your massage" required></textarea>
+            <button type="submit">Send Massage</button>
+        </form>
+    </div>
     </section>
 
     <footer>
